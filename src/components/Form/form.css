@@ -1,0 +1,13 @@
+.section-form {
+  background: #F7F7F7;
+
+  display: flex;
+  flex-direction: column;
+
+
+  padding: 36px 64px;
+  margin: 80px 20%;
+
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
