@@ -1,0 +1,19 @@
+.button-create-card {
+  color: #FFFFFF;
+  background: #6278F7;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  padding: 26px 32px;
+  margin: 36px 0;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.button-create-card:hover {
+  color: #95FFD4
+}
