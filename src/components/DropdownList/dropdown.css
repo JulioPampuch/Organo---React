@@ -1,0 +1,22 @@
+.dropdown {
+
+}
+
+.dropdown label {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.dropdown select {
+  width: 100%;
+  background-color: #FFF;
+
+  box-shadow: 1px 1px 30px rgba(0,0,0, 0.1);
+
+  padding: 24px;
+  margin-top: 20px;
+  
+  box-sizing: border-box;
+  border: none;
+}
