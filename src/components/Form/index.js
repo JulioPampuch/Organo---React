@@ -6,15 +6,15 @@ import "./form.css"
 
 const Form = (props) => {
 
-  const times = [
-    "Programação",
-    "Front-end",
-    "Data-Science",
-    "DevOps",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão"
-  ]
+  const createTeams = (teams) => {
+    teams.map((team) => {
+      return (
+        <>
+          {team.name}
+        </>
+      )
+    })
+  }
 
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
@@ -56,10 +56,10 @@ const Form = (props) => {
         <Dropdown
           required={true}
           label="Time"
-          itens={times}
+          itens={props.teams }
           onChanged={(value) => setTime(value)}
           stateValue={time}
-          />
+        />
         <Button>Criar card</Button>
       </form>
     </section>

@@ -10,8 +10,8 @@ const Dropdown = (props) => {
     <div className="dropdown">
       <label>{props.label}</label>
       <select value={props.stateValue} onChange={handleChange}>
-        {props.itens.map((item) => {
-          return <option key={item}>{item}</option>
+        {props.itens.map((item, index) => {
+          return <option key={index}>{item.name}</option>
         })}
       </select>
     </div>
