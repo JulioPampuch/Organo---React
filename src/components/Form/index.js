@@ -4,7 +4,7 @@ import Dropdown from "../DropdownList"
 import TextArea from "../TextArea"
 import "./form.css"
 
-const Form = () => {
+const Form = (props) => {
 
   const times = [
     "Programação",
@@ -23,7 +23,12 @@ const Form = () => {
 
   const onSave = (event) => {
     event.preventDefault()
-    console.log(nome, cargo, imagem, time)
+    props.onCollaboratorRegistered({
+      nome: nome,
+      cargo: cargo,
+      imagem: imagem,
+      time: time
+    })
   }
 
   return (
