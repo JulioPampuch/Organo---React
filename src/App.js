@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Form from './components/Form';
 import Header from './components/Header';
+import Team from './components/Team';
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
     <div className="App">
       <Header />
       <Form onCollaboratorRegistered={collaborator => onNewCollaborator(collaborator)} />
+      <Team name="Programação" />
+      <Team name="Front-end" />
+      <Team name="Data Science" />
     </div>
   );
 }
