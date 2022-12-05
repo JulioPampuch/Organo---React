@@ -11,7 +11,7 @@ const Dropdown = (props) => {
       <label>{props.label}</label>
       <select value={props.stateValue} onChange={handleChange}>
         {props.itens.map((item, index) => {
-          return <option key={index}>{item.name}</option>
+          return <option key={index}>{item}</option>
         })}
       </select>
     </div>

@@ -6,16 +6,6 @@ import "./form.css"
 
 const Form = (props) => {
 
-  const createTeams = (teams) => {
-    teams.map((team) => {
-      return (
-        <>
-          {team.name}
-        </>
-      )
-    })
-  }
-
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
@@ -56,7 +46,7 @@ const Form = (props) => {
         <Dropdown
           required={true}
           label="Time"
-          itens={props.teams }
+          itens={props.teams}
           onChanged={(value) => setTime(value)}
           stateValue={time}
         />

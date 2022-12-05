@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Form onCollaboratorRegistered={(collaborator) => onNewCollaborator(collaborator)} teams={times} />
+      <Form onCollaboratorRegistered={(collaborator) => onNewCollaborator(collaborator)} teams={times.map((team) => team.name)} />
       {times.map((time) => {
         return (
           <Team key={time.name} name={time.name} primaryColor={time.primaryColor} secundaryColor={time.secundaryColor} />
