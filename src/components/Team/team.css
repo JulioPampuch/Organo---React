@@ -1,12 +1,16 @@
 .team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
   text-align: center;
   padding: 32px;
 }
 
 .team h3 {
-  display: flex;
-  justify-content: center;
-  
+  width: 100%;
+
   font-size: 32px;
   
   padding-bottom: 8px;

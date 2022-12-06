@@ -1,0 +1,46 @@
+.collaborator {
+
+  display: flex;
+  flex-direction: column;
+  align-itens: center;
+  justify-content: center;
+
+  width: 262px;
+  background-color: white;
+
+  border-radius: 10px;
+}
+
+.collaborator .header {
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #57C278;
+  height: 60px;
+
+  border-radius: 10px 10px 0 0;
+
+  padding-top: 20px;
+}
+
+.collaborator .header .img {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  background: url("https://github.com/JulioPampuch.png");
+  background-size: cover;
+  
+}
+
+.collaborator .footer {
+  font-size: 18px;
+
+  margin: 70px 0 20px 0;
+}
+
+.collaborator .footer h4, h5 {
+  margin: 8px 0;
+}
