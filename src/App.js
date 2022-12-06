@@ -45,18 +45,17 @@ function App() {
 
   const [collaborators, setCollaborators] = useState([])
 
-  const onNewCollaborator = (newCollaborator) => {
-    console.log(newCollaborator)
-    setCollaborators([...collaborators, newCollaborator])
-  }
-
   return (
     <div className="App">
       <Header />
-      <Form onCollaboratorRegistered={(collaborator) => onNewCollaborator(collaborator)} teams={times.map((team) => team.name)} />
+      <Form onCollaboratorRegistered={(collaborator) => setCollaborators([...collaborators, collaborator])} teams={times.map((team) => team.name)} />
       {times.map((time) => {
         return (
-          <Team key={time.name} name={time.name} primaryColor={time.primaryColor} secundaryColor={time.secundaryColor} />
+          <Team key={time.name} 
+          name={time.name} 
+          primaryColor={time.primaryColor} 
+          secundaryColor={time.secundaryColor}
+          collaborators={collaborators} />
         )
       })}
     </div>

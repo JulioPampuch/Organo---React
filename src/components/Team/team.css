@@ -2,10 +2,16 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
 
   text-align: center;
   padding: 32px;
+}
+
+.team .border {
+  width: 32px;
+  border-bottom: 4px solid;
+
+  margin: 0 45%;
 }
 
 .team h3 {
@@ -16,5 +22,4 @@
   padding-bottom: 8px;
   margin: 0 40%;  
   
-  border-bottom: 4px solid;
 }
