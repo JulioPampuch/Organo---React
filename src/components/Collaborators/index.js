@@ -1,11 +1,10 @@
 import "./collaborators.css"
 
-const Collaborator = () => {
+const Collaborator = (props) => {
   return (
     <div className="collaborator">
-        <div className="header">
+        <div className="header" style={{backgroundColor: props.primaryColor}}>
           <div className="img">
-            
           </div>
           {/* <img src="https://github.com/JulioPampuch.png" alt="Julio Pampuch" /> */}
       </div>
