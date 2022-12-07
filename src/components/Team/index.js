@@ -4,6 +4,7 @@ import "./team.css"
 const Team = (props) => {
 
   return (
+    (props.collaborators.length)> 0 &&
     <section className="team" style={{ backgroundColor: props.secundaryColor }}>
       <h3>{props.name}</h3>
       <div className="border" style={{ borderColor: props.primaryColor }}></div>
@@ -12,8 +13,6 @@ const Team = (props) => {
           <Collaborator name={collaborator.nome} job={collaborator.time} img={collaborator.imagem} color={props.primaryColor} />
         )
       })}
-
-      {/* <Collaborator name={props.collaborator} job="Desenvolvedor" color={props.primaryColor} /> */}
     </section>
   )
 }
