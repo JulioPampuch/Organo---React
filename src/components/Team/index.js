@@ -9,7 +9,7 @@ const Team = (props) => {
       <div className="border" style={{ borderColor: props.primaryColor }}></div>
       {props.collaborators.map((collaborator) => {
         return (
-          <Collaborator name={collaborator.nome} job={collaborator.time} color={props.primaryColor} />
+          <Collaborator name={collaborator.nome} job={collaborator.time} img={collaborator.imagem} color={props.primaryColor} />
         )
       })}
 
