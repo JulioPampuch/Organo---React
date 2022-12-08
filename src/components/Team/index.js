@@ -10,7 +10,7 @@ const Team = (props) => {
       <div className="border" style={{ borderColor: props.primaryColor }}></div>
       {props.collaborators.map((collaborator) => {
         return (
-          <Collaborator name={collaborator.nome} job={collaborator.time} img={collaborator.imagem} color={props.primaryColor} />
+          <Collaborator key={collaborator.name} name={collaborator.nome} job={collaborator.time} img={collaborator.imagem} color={props.primaryColor} />
         )
       })}
     </section>
