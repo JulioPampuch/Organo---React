@@ -7,6 +7,9 @@ function App() {
 
   const times = [
     {
+      name: 'Selecione seu time'
+    },
+    {
       name: 'Programação',
       primaryColor: '#57C278',
       secundaryColor: '#D9F7E9'
@@ -51,11 +54,11 @@ function App() {
       <Form onCollaboratorRegistered={(collaborator) => setCollaborators([...collaborators, collaborator])} teams={times.map((team) => team.name)} />
       {times.map((time) => {
         return (
-          <Team key={time.name} 
-          name={time.name} 
-          primaryColor={time.primaryColor} 
-          secundaryColor={time.secundaryColor}
-          collaborators={collaborators.filter((collaborator) => collaborator.time === time.name )} />
+          <Team key={time.name}
+            name={time.name}
+            primaryColor={time.primaryColor}
+            secundaryColor={time.secundaryColor}
+            collaborators={collaborators.filter((collaborator) => collaborator.time === time.name)} />
         )
       })}
     </div>
