@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Footer from './components/Footer';
 import Form from './components/Form';
 import Header from './components/Header';
 import Team from './components/Team';
@@ -61,6 +62,7 @@ function App() {
             collaborators={collaborators.filter((collaborator) => collaborator.time === time.name)} />
         )
       })}
+      <Footer />
     </div>
   );
 }

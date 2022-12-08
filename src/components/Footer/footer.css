@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  height: 213px;
+
+  display: flex;
+
+
+  background-color: #6278F7;
+}
+
+.footer .img-footer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: url("/public/imagens/fundo.png")
+}
+
+.img-socialMedias {
+  width: 30px;
+  height: 32px;
+
+  margin: 0 34px
+}
+
+.text-footer {
+  font-size: 20px;
+  color: #FFFFFF;
+
+}

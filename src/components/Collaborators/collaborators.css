@@ -39,18 +39,18 @@
   
 }
 
-.collaborator .footer {
+.collaborator .collaborator-footer {
   width: 70%;
   margin: 55px auto 20px auto;
 }
 
-.collaborator .footer h4 {
+.collaborator .collaborator-footer h4 {
   font-size: 18px;
   color: #6278F7;
   margin: 8px 0;
 }
 
-.collaborator .footer h5 {
+.collaborator .collaborator-footer h5 {
   font-size: 16px;
   margin: 8px 0;
 }

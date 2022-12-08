@@ -8,7 +8,7 @@ const Collaborator = (props) => {
           </div>
           {/* <img src="https://github.com/JulioPampuch.png" alt="Julio Pampuch" /> */}
       </div>
-      <div className="footer">
+      <div className="collaborator-footer">
         <h4>{props.name}</h4>
         <h5>{props.job}</h5>
       </div>
