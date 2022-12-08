@@ -8,9 +8,9 @@ const Team = (props) => {
     <section className="team" style={{ backgroundColor: props.secundaryColor }}>
       <h3>{props.name}</h3>
       <div className="border" style={{ borderColor: props.primaryColor }}></div>
-      {props.collaborators.map((collaborator) => {
+      {props.collaborators.map((collaborator, index) => {
         return (
-          <Collaborator key={collaborator.name} name={collaborator.nome} job={collaborator.time} img={collaborator.imagem} color={props.primaryColor} />
+          <Collaborator key={index} name={collaborator.nome} job={collaborator.time} img={collaborator.imagem} color={props.primaryColor} />
         )
       })}
     </section>
